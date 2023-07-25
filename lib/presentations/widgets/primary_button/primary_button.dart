@@ -3,10 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:trackizer/cofig/constants/theme/colors.dart';
 import 'package:trackizer/cofig/constants/theme/typography.dart';
 
-
 class PrimaryButton extends StatelessWidget {
+  final String text;
+  final void Function() onPressed;
+
   const PrimaryButton({
     super.key,
+    required this.text,
+    required this.onPressed,
   });
 
   @override
@@ -24,24 +28,24 @@ class PrimaryButton extends StatelessWidget {
           )
         ],
         borderRadius: const BorderRadius.all(Radius.elliptical(100, 100)),
-        gradient: const RadialGradient(
-          radius: 0.1,
-          colors: [
-            white,
-            accentP100,
-          ]
-        )
+        gradient: const LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [
+          accentP100,
+          accentP100,
+        ])
       ),
       child: TextButton(
         style: ButtonStyle(
           splashFactory: NoSplash.splashFactory,
-          overlayColor: MaterialStateColor.resolveWith((states) => Colors.transparent),
+          overlayColor:
+              MaterialStateColor.resolveWith((states) => Colors.transparent),
         ),
+        onPressed: onPressed,
         child: Text(
-          "Get Started",
-          style: headline2.copyWith(color: white,),
+          text,
+          style: headline2.copyWith(
+            color: white,
+          ),
         ),
-        onPressed: (){}, 
       ),
     );
   }

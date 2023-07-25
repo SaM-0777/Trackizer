@@ -1,6 +1,6 @@
-# trackizer
+# Trackizer
 
-A new Flutter project.
+Trackizer: The all-in-one expense tracking app.
 
 ## Getting Started
 

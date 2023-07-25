@@ -3,10 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:trackizer/cofig/constants/theme/colors.dart';
 import 'package:trackizer/cofig/constants/theme/typography.dart';
 
-
 class SecondaryButton extends StatelessWidget {
+  final String label;
+  final void Function() onPressed;
+
   const SecondaryButton({
     super.key,
+    required this.label,
+    required this.onPressed,
   });
 
   @override
@@ -22,13 +26,14 @@ class SecondaryButton extends StatelessWidget {
       child: TextButton(
         style: ButtonStyle(
           splashFactory: NoSplash.splashFactory,
-          overlayColor: MaterialStateColor.resolveWith((states) => Colors.transparent),
+          overlayColor:
+              MaterialStateColor.resolveWith((states) => Colors.transparent),
         ),
+        onPressed: onPressed,
         child: Text(
-          "I have an account",
+          label,
           style: headline2.copyWith(color: white),
         ),
-        onPressed: (){}, 
       ),
     );
   }
