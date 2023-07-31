@@ -22,12 +22,14 @@ Stack body(
       Positioned(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
+          //mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Center(
-              child: Image.asset(
-                'assets/images/WelcomeFrame.png',
-                alignment: Alignment.center,
+            Expanded(
+              child: Center(
+                child: Image.asset(
+                  'assets/images/WelcomeFrame.png',
+                  alignment: Alignment.center,
+                ),
               ),
             ),
             Padding(
