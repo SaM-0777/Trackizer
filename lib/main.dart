@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import 'package:trackizer/presentations/routes/routes.dart';
 import 'package:trackizer/presentations/screens/welcome/welcome_screen.dart';
+
 
 void main() {
   runApp(const App());
@@ -19,6 +22,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Trackizer',
+      routes: routes,
       theme: ThemeData(
         fontFamily: "Inter",
       ),

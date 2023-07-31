@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 
 import 'package:trackizer/cofig/constants/theme/colors.dart';
+import 'package:trackizer/presentations/widgets/appbar/appbar.dart';
+import 'package:trackizer/presentations/screens/register_options/widgets/body.dart';
 
-import 'package:trackizer/presentations/screens/welcome/widgets/appbar.dart';
-import 'package:trackizer/presentations/screens/welcome/widgets/body.dart';
 
-
-class WelcomeScreen extends StatelessWidget {
-  const WelcomeScreen({super.key});
+class RegisterOptionsScreen extends StatelessWidget {
+  const RegisterOptionsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
