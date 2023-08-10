@@ -8,6 +8,10 @@ Trackizer is a user-friendly Flutter app designed to assist you in effectively m
 |:---:|:---:|
 | ![Welcome](assets/demo/WelcomeScreen.jpg) | ![Home](assets/demo/HomeScreen.jpg) |
 
+
+[![Watch the Video](assets/demo/HomeScreen.jpg)](assets/demo/Demo.mp4)
+
+
 ## Contributing
 
 Contributions are welcome! If you encounter bugs or want to introduce new features, feel free to open an issue or submit a pull request.
