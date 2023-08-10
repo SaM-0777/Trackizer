@@ -50,7 +50,9 @@ class Body extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            PrimaryButton(text: "Sign In", onPressed: (){}),
+            PrimaryButton(text: "Sign In", onPressed: (){
+              Navigator.pushNamed(context, '/app');
+            }),
             const Spacer(),
             Text(
               "If you don't have an account yet?",

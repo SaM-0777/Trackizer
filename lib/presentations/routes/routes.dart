@@ -5,10 +5,13 @@ import 'package:trackizer/presentations/screens/register_options/register_option
 import 'package:trackizer/presentations/screens/register/register_screen.dart';
 import 'package:trackizer/presentations/screens/login/login_screen.dart';
 
+import 'package:trackizer/presentations/screens/bottom_tab_screens/bottom_tab_screens.dart';
+
 
 Map<String, Widget Function(BuildContext)> routes = {
   '/welcome': (context) => const WelcomeScreen(),
   '/register-options':(context) => const RegisterOptionsScreen(),
   '/register':(context) => const RegisterScreen(),
   '/login':(context) => const LoginScreen(),
+  '/app': (context) => BottomTabScreens(),
 };
