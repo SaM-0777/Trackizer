@@ -1,16 +1,17 @@
-# Trackizer
+# Trackizer - Expense Management Flutter App
 
-Trackizer: The all-in-one expense tracking app.
+Trackizer is a user-friendly Flutter app designed to assist you in effectively managing your expenses. With intuitive features and insightful visualizations, Trackizer empowers you to take control of your finances.
 
-## Getting Started
+## Preview
 
-This project is a starting point for a Flutter application.
+![App Screenshot](screenshot.png)
 
-A few resources to get you started if this is your first Flutter project:
+## Contributing
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Contributions are welcome! If you encounter bugs or want to introduce new features, feel free to open an issue or submit a pull request.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Please ensure your pull requests adhere to our [code of conduct](CODE_OF_CONDUCT.md) and encompass relevant tests and documentation.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE.md).
